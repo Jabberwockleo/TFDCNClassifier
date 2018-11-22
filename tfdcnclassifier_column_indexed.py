@@ -22,12 +22,11 @@ from scipy import sparse
 
 class TFDCNClassifier(object):
     """
-        Logistic Regressor
-        Compatible with sklearn APIs: X is dense matrix or scipy.sparse.csr_matrix
+        Deep Cross Network
     """
     def __init__(self,
         feature_num,
-        field_num, # It reduces to vanilla FM + W&D when field num == feature num
+        field_num,
         factor_num=10,
         deep_layer_nodes=[32, 32],
         cross_layer_num=2,
